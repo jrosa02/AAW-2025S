@@ -1,0 +1,30 @@
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : The pocl project
+Device 0 : cpu-haswell-Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0xb78fca0
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0656596 | 0.0182336                  |
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : The pocl project
+Device 0 : cpu-haswell-Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0xb78fca0
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0344628 | 0.00549061                 |

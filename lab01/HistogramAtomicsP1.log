@@ -1,0 +1,13 @@
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x2fcf43f0
+Selecting scalar kernel
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Elements | Setup Time (sec) | Avg. kernel time (sec) | Elements/sec |
+|----------|------------------|------------------------|--------------|
+| 16777216 | 0.190143         | 0.000300975            | 5.57428e+10  |

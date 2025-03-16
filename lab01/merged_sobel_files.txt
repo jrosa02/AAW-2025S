@@ -1,0 +1,75 @@
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x6001460
+Executing kernel for 10 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.044098  | 0.000295996                |
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x332b2460
+Executing kernel for 500 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.0438288 | 0.000285572                |
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x39db8460
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.0494904 | 0.000286545                |
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x29c45de0
+Executing kernel for 10 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.0239002 | 0.000872119                |
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x819ade0
+Executing kernel for 500 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.0242875 | 0.00082359                 |
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x130f1de0
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.0269372 | 0.000886434                |

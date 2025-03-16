@@ -1,0 +1,300 @@
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : The pocl project
+Device 0 : cpu-haswell-Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0xb78fca0
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0656596 | 0.0182336                  |
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : The pocl project
+Device 0 : cpu-haswell-Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0xb78fca0
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0344628 | 0.00549061                 |
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x244b0c30
+ 
+			BUILD LOG
+ ************************************************
+<kernel>:74:32: error: use of undeclared identifier 'convert_uchar4_sat'; did you mean 'convert_uchar_sat'?
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                      ^~~~~~~~~~~~~~~~~~
+                                      convert_uchar_sat
+cl_kernel.h:8678:26: note: 'convert_uchar_sat' declared here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                         ^
+<kernel>:74:52: error: passing 'int4' (vector of 4 'int' values) to parameter of incompatible type 'double16' (vector of 16 'double' values)
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cl_kernel.h:8678:52: note: passing argument to parameter here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                                                   ^
+
+ ************************************************
+Error: clBuildProgram failed. Error code : CL_BUILD_PROGRAM_FAILURE
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/../../../../../include/SDKUtil/CLUtil.hpp:938
+Error: buildOpenCLProgram() failed
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/BoxFilterSAT.cpp:281
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x244b0c30
+ 
+			BUILD LOG
+ ************************************************
+<kernel>:74:32: error: use of undeclared identifier 'convert_uchar4_sat'; did you mean 'convert_uchar_sat'?
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                      ^~~~~~~~~~~~~~~~~~
+                                      convert_uchar_sat
+cl_kernel.h:8678:26: note: 'convert_uchar_sat' declared here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                         ^
+<kernel>:74:52: error: passing 'int4' (vector of 4 'int' values) to parameter of incompatible type 'double16' (vector of 16 'double' values)
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cl_kernel.h:8678:52: note: passing argument to parameter here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                                                   ^
+
+ ************************************************
+Error: clBuildProgram failed. Error code : CL_BUILD_PROGRAM_FAILURE
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/../../../../../include/SDKUtil/CLUtil.hpp:938
+Error: buildOpenCLProgram() failed
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/BoxFilterSeparable.cpp:227
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x10ebc30
+ 
+			BUILD LOG
+ ************************************************
+<kernel>:74:32: error: use of undeclared identifier 'convert_uchar4_sat'; did you mean 'convert_uchar_sat'?
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                      ^~~~~~~~~~~~~~~~~~
+                                      convert_uchar_sat
+cl_kernel.h:8678:26: note: 'convert_uchar_sat' declared here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                         ^
+<kernel>:74:52: error: passing 'int4' (vector of 4 'int' values) to parameter of incompatible type 'double16' (vector of 16 'double' values)
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cl_kernel.h:8678:52: note: passing argument to parameter here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                                                   ^
+
+ ************************************************
+Error: clBuildProgram failed. Error code : CL_BUILD_PROGRAM_FAILURE
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/../../../../../include/SDKUtil/CLUtil.hpp:938
+Error: buildOpenCLProgram() failed
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/BoxFilterSAT.cpp:281
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x10ebc30
+ 
+			BUILD LOG
+ ************************************************
+<kernel>:74:32: error: use of undeclared identifier 'convert_uchar4_sat'; did you mean 'convert_uchar_sat'?
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                      ^~~~~~~~~~~~~~~~~~
+                                      convert_uchar_sat
+cl_kernel.h:8678:26: note: 'convert_uchar_sat' declared here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                         ^
+<kernel>:74:52: error: passing 'int4' (vector of 4 'int' values) to parameter of incompatible type 'double16' (vector of 16 'double' values)
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cl_kernel.h:8678:52: note: passing argument to parameter here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                                                   ^
+
+ ************************************************
+Error: clBuildProgram failed. Error code : CL_BUILD_PROGRAM_FAILURE
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/../../../../../include/SDKUtil/CLUtil.hpp:938
+Error: buildOpenCLProgram() failed
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/BoxFilterSeparable.cpp:227
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x15045c30
+ 
+			BUILD LOG
+ ************************************************
+<kernel>:74:32: error: use of undeclared identifier 'convert_uchar4_sat'; did you mean 'convert_uchar_sat'?
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                      ^~~~~~~~~~~~~~~~~~
+                                      convert_uchar_sat
+cl_kernel.h:8678:26: note: 'convert_uchar_sat' declared here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                         ^
+<kernel>:74:52: error: passing 'int4' (vector of 4 'int' values) to parameter of incompatible type 'double16' (vector of 16 'double' values)
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cl_kernel.h:8678:52: note: passing argument to parameter here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                                                   ^
+
+ ************************************************
+Error: clBuildProgram failed. Error code : CL_BUILD_PROGRAM_FAILURE
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/../../../../../include/SDKUtil/CLUtil.hpp:938
+Error: buildOpenCLProgram() failed
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/BoxFilterSAT.cpp:281
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+
+Selected Platform Vendor : NVIDIA Corporation
+Device 0 : NVIDIA GeForce RTX 2070 SUPER Device ID is 0x15045c30
+ 
+			BUILD LOG
+ ************************************************
+<kernel>:74:32: error: use of undeclared identifier 'convert_uchar4_sat'; did you mean 'convert_uchar_sat'?
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                      ^~~~~~~~~~~~~~~~~~
+                                      convert_uchar_sat
+cl_kernel.h:8678:26: note: 'convert_uchar_sat' declared here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                         ^
+<kernel>:74:52: error: passing 'int4' (vector of 4 'int' values) to parameter of incompatible type 'double16' (vector of 16 'double' values)
+        outputImage[x + y * width] = (convert_uchar4_sat)((sumA + sumC - sumB - sumD) / filterSize);
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cl_kernel.h:8678:52: note: passing argument to parameter here
+uchar16 __OVERLOADABLE__ convert_uchar_sat(double16); 
+                                                   ^
+
+ ************************************************
+Error: clBuildProgram failed. Error code : CL_BUILD_PROGRAM_FAILURE
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/../../../../../include/SDKUtil/CLUtil.hpp:938
+Error: buildOpenCLProgram() failed
+Location : /var/lib/jenkins/workspace/APPSDK_BUILD/C/Release/L/LBM/P/x64/S/OpenCL/T/gcc-4.8.4/samples/opencl/cl/1.x/BoxFilter/BoxFilterSeparable.cpp:227
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x299d4f90
+Executing kernel for 10 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0944009 | 0.0449409                  |
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x299d4f90
+Executing kernel for 10 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0527737 | 0.0053438                  |
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x2fbebf90
+Executing kernel for 500 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.094337  | 0.0453182                  |
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x2fbebf90
+Executing kernel for 500 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0528774 | 0.00520232                 |
+Running SAT version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x1684df90
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0947459 | 0.0454989                  |
+
+
+Running Separable version.. 
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x1684df90
+Executing kernel for 200 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.0536865 | 0.00518646                 |

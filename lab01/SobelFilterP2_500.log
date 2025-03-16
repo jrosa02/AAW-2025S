@@ -1,0 +1,13 @@
+Platform 0 : The pocl project
+Platform 1 : NVIDIA Corporation
+Platform 2 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+
+Selected Platform Vendor : Advanced Micro Devices, Inc.
+Device 0 : Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz Device ID is 0x819ade0
+Executing kernel for 500 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 512   | 512    | 0.0242875 | 0.00082359                 |

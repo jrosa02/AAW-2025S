@@ -1,0 +1,307 @@
+Number of platforms:				 3
+  Platform Profile:				 FULL_PROFILE
+  Platform Version:				 OpenCL 3.0 PoCL 5.0+debian  Linux, None+Asserts, RELOC, SPIR, LLVM 16.0.6, SLEEF, DISTRO, POCL_DEBUG
+  Platform Name:				 Portable Computing Language
+  Platform Vendor:				 The pocl project
+  Platform Extensions:				 cl_khr_icd cl_pocl_content_size
+  Platform Profile:				 FULL_PROFILE
+  Platform Version:				 OpenCL 3.0 CUDA 12.2.148
+  Platform Name:				 NVIDIA CUDA
+  Platform Vendor:				 NVIDIA Corporation
+  Platform Extensions:				 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_copy_opts cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_opaque_fd cl_khr_external_memory_opaque_fd
+  Platform Profile:				 FULL_PROFILE
+  Platform Version:				 OpenCL 2.0 AMD-APP (1800.8)
+  Platform Name:				 AMD Accelerated Parallel Processing
+  Platform Vendor:				 Advanced Micro Devices, Inc.
+  Platform Extensions:				 cl_khr_icd cl_amd_event_callback cl_amd_offline_devices 
+
+
+  Platform Name:				 Portable Computing Language
+Number of devices:				 1
+  Device Type:					 CL_DEVICE_TYPE_CPU
+  Vendor ID:					 8086h
+  Max compute units:				 8
+  Max work items dimensions:			 3
+    Max work items[0]:				 4096
+    Max work items[1]:				 4096
+    Max work items[2]:				 4096
+  Max work group size:				 4096
+  Preferred vector width char:			 16
+  Preferred vector width short:			 16
+  Preferred vector width int:			 8
+  Preferred vector width long:			 4
+  Preferred vector width float:			 8
+  Preferred vector width double:		 4
+  Native vector width char:			 16
+  Native vector width short:			 16
+  Native vector width int:			 8
+  Native vector width long:			 4
+  Native vector width float:			 8
+  Native vector width double:			 4
+  Max clock frequency:				 4900Mhz
+  Address bits:					 64
+  Max memory allocation:			 8589934592
+  Image support:				 Yes
+  Max number of images read arguments:		 128
+  Max number of images write arguments:		 128
+  Max image 2D width:				 16384
+  Max image 2D height:				 16384
+  Max image 3D width:				 2048
+  Max image 3D height:				 2048
+  Max image 3D depth:				 2048
+  Max samplers within kernel:			 16
+  Max size of kernel argument:			 1024
+  Alignment (bits) of base address:		 1024
+  Minimum alignment (bytes) for any datatype:	 128
+  Single precision floating point capability
+    Denorms:					 Yes
+    Quiet NaNs:					 Yes
+    Round to nearest even:			 Yes
+    Round to zero:				 Yes
+    Round to +ve and infinity:			 Yes
+    IEEE754-2008 fused multiply-add:		 Yes
+  Cache type:					 Read/Write
+  Cache line size:				 64
+  Cache size:					 12582912
+  Global memory size:				 31421202432
+  Constant buffer size:				 262144
+  Max number of constant args:			 8
+  Local memory type:				 Global
+  Local memory size:				 262144
+  Max pipe arguments:				 0
+  Max pipe active reservations:			 0
+  Max pipe packet size:				 0
+  Max global variable size:			 64000
+  Max global variable preferred total size:	 262144
+  Max read/write image args:			 128
+  Max on device events:				 0
+  Queue on device max size:			 0
+  Max on device queues:				 0
+  Queue on device preferred size:		 0
+  SVM capabilities:				 
+    Coarse grain buffer:			 Yes
+    Fine grain buffer:				 Yes
+    Fine grain system:				 No
+    Atomics:					 Yes
+  Preferred platform atomic alignment:		 64
+  Preferred global atomic alignment:		 64
+  Preferred local atomic alignment:		 64
+  Kernel Preferred work group size multiple:	 8
+  Error correction support:			 0
+  Unified memory for Host and Device:		 1
+  Profiling timer resolution:			 1
+  Device endianess:				 Little
+  Available:					 Yes
+  Compiler available:				 Yes
+  Execution capabilities:				 
+    Execute OpenCL kernels:			 Yes
+    Execute native function:			 Yes
+  Queue on Host properties:				 
+    Out-of-Order:				 Yes
+    Profiling :					 Yes
+  Queue on Device properties:				 
+    Out-of-Order:				 No
+    Profiling :					 No
+  Platform ID:					 0x7c47adf1e008
+  Name:						 cpu-haswell-Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz
+  Vendor:					 GenuineIntel
+  Device OpenCL C version:			 OpenCL C 1.2 PoCL
+  Driver version:				 5.0+debian
+  Profile:					 FULL_PROFILE
+  Version:					 OpenCL 3.0 PoCL HSTR: cpu-x86_64-pc-linux-gnu-haswell
+  Extensions:					 cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_3d_image_writes cl_khr_command_buffer cl_pocl_pinned_buffers cl_khr_subgroups cl_intel_unified_shared_memory cl_khr_subgroup_ballot cl_khr_subgroup_shuffle cl_intel_subgroups cl_intel_required_subgroup_size cl_ext_float_atomics cl_khr_spir cl_khr_fp64 cl_khr_int64_base_atomics cl_khr_int64_extended_atomics
+
+
+  Platform Name:				 NVIDIA CUDA
+Number of devices:				 1
+  Device Type:					 CL_DEVICE_TYPE_GPU
+  Vendor ID:					 10deh
+  Max compute units:				 40
+  Max work items dimensions:			 3
+    Max work items[0]:				 1024
+    Max work items[1]:				 1024
+    Max work items[2]:				 64
+  Max work group size:				 1024
+  Preferred vector width char:			 1
+  Preferred vector width short:			 1
+  Preferred vector width int:			 1
+  Preferred vector width long:			 1
+  Preferred vector width float:			 1
+  Preferred vector width double:		 1
+  Native vector width char:			 1
+  Native vector width short:			 1
+  Native vector width int:			 1
+  Native vector width long:			 1
+  Native vector width float:			 1
+  Native vector width double:			 1
+  Max clock frequency:				 1785Mhz
+  Address bits:					 64
+  Max memory allocation:			 2088386560
+  Image support:				 Yes
+  Max number of images read arguments:		 256
+  Max number of images write arguments:		 32
+  Max image 2D width:				 32768
+  Max image 2D height:				 32768
+  Max image 3D width:				 16384
+  Max image 3D height:				 16384
+  Max image 3D depth:				 16384
+  Max samplers within kernel:			 32
+  Max size of kernel argument:			 32764
+  Alignment (bits) of base address:		 4096
+  Minimum alignment (bytes) for any datatype:	 128
+  Single precision floating point capability
+    Denorms:					 Yes
+    Quiet NaNs:					 Yes
+    Round to nearest even:			 Yes
+    Round to zero:				 Yes
+    Round to +ve and infinity:			 Yes
+    IEEE754-2008 fused multiply-add:		 Yes
+  Cache type:					 Read/Write
+  Cache line size:				 128
+  Cache size:					 1310720
+  Global memory size:				 8353546240
+  Constant buffer size:				 65536
+  Max number of constant args:			 9
+  Local memory type:				 Scratchpad
+  Local memory size:				 49152
+  Max pipe arguments:				 0
+  Max pipe active reservations:			 0
+  Max pipe packet size:				 0
+  Max global variable size:			 0
+  Max global variable preferred total size:	 0
+  Max read/write image args:			 0
+  Max on device events:				 0
+  Queue on device max size:			 0
+  Max on device queues:				 0
+  Queue on device preferred size:		 0
+  SVM capabilities:				 
+    Coarse grain buffer:			 Yes
+    Fine grain buffer:				 No
+    Fine grain system:				 No
+    Atomics:					 No
+  Preferred platform atomic alignment:		 0
+  Preferred global atomic alignment:		 0
+  Preferred local atomic alignment:		 0
+  Kernel Preferred work group size multiple:	 32
+  Error correction support:			 0
+  Unified memory for Host and Device:		 0
+  Profiling timer resolution:			 1000
+  Device endianess:				 Little
+  Available:					 Yes
+  Compiler available:				 Yes
+  Execution capabilities:				 
+    Execute OpenCL kernels:			 Yes
+    Execute native function:			 No
+  Queue on Host properties:				 
+    Out-of-Order:				 Yes
+    Profiling :					 Yes
+  Queue on Device properties:				 
+    Out-of-Order:				 No
+    Profiling :					 No
+  Platform ID:					 0x282a3a50
+  Name:						 NVIDIA GeForce RTX 2070 SUPER
+  Vendor:					 NVIDIA Corporation
+  Device OpenCL C version:			 OpenCL C 1.2 
+  Driver version:				 535.183.01
+  Profile:					 FULL_PROFILE
+  Version:					 OpenCL 3.0 CUDA
+  Extensions:					 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_copy_opts cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_opaque_fd cl_khr_external_memory_opaque_fd
+
+
+  Platform Name:				 AMD Accelerated Parallel Processing
+Number of devices:				 1
+  Device Type:					 CL_DEVICE_TYPE_CPU
+  Vendor ID:					 1002h
+  Board name:					 
+  Max compute units:				 8
+  Max work items dimensions:			 3
+    Max work items[0]:				 1024
+    Max work items[1]:				 1024
+    Max work items[2]:				 1024
+  Max work group size:				 1024
+  Preferred vector width char:			 16
+  Preferred vector width short:			 8
+  Preferred vector width int:			 4
+  Preferred vector width long:			 2
+  Preferred vector width float:			 8
+  Preferred vector width double:		 4
+  Native vector width char:			 16
+  Native vector width short:			 8
+  Native vector width int:			 4
+  Native vector width long:			 2
+  Native vector width float:			 8
+  Native vector width double:			 4
+  Max clock frequency:				 800Mhz
+  Address bits:					 64
+  Max memory allocation:			 8392171520
+  Image support:				 Yes
+  Max number of images read arguments:		 128
+  Max number of images write arguments:		 64
+  Max image 2D width:				 8192
+  Max image 2D height:				 8192
+  Max image 3D width:				 2048
+  Max image 3D height:				 2048
+  Max image 3D depth:				 2048
+  Max samplers within kernel:			 16
+  Max size of kernel argument:			 4096
+  Alignment (bits) of base address:		 1024
+  Minimum alignment (bytes) for any datatype:	 128
+  Single precision floating point capability
+    Denorms:					 Yes
+    Quiet NaNs:					 Yes
+    Round to nearest even:			 Yes
+    Round to zero:				 Yes
+    Round to +ve and infinity:			 Yes
+    IEEE754-2008 fused multiply-add:		 Yes
+  Cache type:					 Read/Write
+  Cache line size:				 64
+  Cache size:					 32768
+  Global memory size:				 33568686080
+  Constant buffer size:				 65536
+  Max number of constant args:			 8
+  Local memory type:				 Global
+  Local memory size:				 32768
+  Max pipe arguments:				 16
+  Max pipe active reservations:			 16
+  Max pipe packet size:				 4097204224
+  Max global variable size:			 1879048192
+  Max global variable preferred total size:	 1879048192
+  Max read/write image args:			 64
+  Max on device events:				 0
+  Queue on device max size:			 0
+  Max on device queues:				 0
+  Queue on device preferred size:		 0
+  SVM capabilities:				 
+    Coarse grain buffer:			 No
+    Fine grain buffer:				 No
+    Fine grain system:				 No
+    Atomics:					 No
+  Preferred platform atomic alignment:		 0
+  Preferred global atomic alignment:		 0
+  Preferred local atomic alignment:		 0
+  Kernel Preferred work group size multiple:	 1
+  Error correction support:			 0
+  Unified memory for Host and Device:		 1
+  Profiling timer resolution:			 1
+  Device endianess:				 Little
+  Available:					 Yes
+  Compiler available:				 Yes
+  Execution capabilities:				 
+    Execute OpenCL kernels:			 Yes
+    Execute native function:			 Yes
+  Queue on Host properties:				 
+    Out-of-Order:				 No
+    Profiling :					 Yes
+  Queue on Device properties:				 
+    Out-of-Order:				 No
+    Profiling :					 No
+  Platform ID:					 0x7c4796039430
+  Name:						 Intel(R) Core(TM) i7-9700KF CPU @ 3.60GHz
+  Vendor:					 GenuineIntel
+  Device OpenCL C version:			 OpenCL C 1.2 
+  Driver version:				 1800.8 (sse2,avx)
+  Profile:					 FULL_PROFILE
+  Version:					 OpenCL 1.2 AMD-APP (1800.8)
+  Extensions:					 cl_khr_fp64 cl_amd_fp64 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_gl_sharing cl_ext_device_fission cl_amd_device_attribute_query cl_amd_vec3 cl_amd_printf cl_amd_media_ops cl_amd_media_ops2 cl_amd_popcnt cl_khr_spir cl_khr_gl_event 
+
+

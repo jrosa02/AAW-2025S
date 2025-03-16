@@ -1,0 +1,132 @@
+    1  ls -al
+    2  clinfo
+    3  ./matlab
+    4  ./MATLAB-link 
+    5  mc
+    6  exit
+    7  ls
+    8  ln -s -t /opt/AMDAPPSDK-3.0/samples/ $HOME/AMD-OpenCL-samples-link
+    9  echo $HOME
+   10  ln -s -T /opt/AMDAPPSDK-3.0/samples/ $HOME/AMD-OpenCL-samples-link
+   11  ls
+   12  ln -s -T $HOME/LAB_AAW/ $HOME/LAB-link
+   13  mc
+   14  ln -s -T /usr/local/MATLAB/R2024b/bin/matlab  $HOME/MATLAB-link
+   15  ln -s -T /usr/local/MATLAB/R2024b/bin  $HOME/MATLAB-link
+   16  ln -s -T /usr/local/MATLAB/R2024b/bin/matlab  $HOME/MATLAB-link
+   17  ln -s -T /usr/local/MATLAB/R2024b/bin/  $HOME/MATLAB-link
+   18  ./SobelFilter
+   19  ./SobelFilter -p 0
+   20  ./SobelFilter -p 1
+   21  ./SobelFilter -p 2
+   22  ./SobelFilter -p 3
+   23  ./SobelFilter -p 4
+   24  ./SobelFilterImage
+   25  ./SobelFilterImage -p 0
+   26  ./SobelFilterImage -p 1
+   27  ./SobelFilterImage -p 2
+   28  ./matlab
+   29  mc
+   30  ./SobelFilter
+   31  ls
+   32  see SobelFilter*.bmp
+   33  see SobelFilter_Output.bmp 
+   34  man see
+   35  see
+   36  see 
+   37  ./SobelFilter
+   38  ./SobelFilter 0
+   39  ./SobelFilter -p 0
+   40  ./SobelFilter -p 1
+   41  ./SobelFilter -p 2
+   42  ./SobelFilter -p 3
+   43  ./SobelFilterImage -p 3
+   44  ./SobelFilterImage -p 2
+   45  ./SobelFilterImage -p 1
+   46  ./SobelFilterImage -p 0
+   47  exit
+   48  dupa
+   49  whereami
+   50  cl info | more
+   51  clinfo | more
+   52  clinfo
+   53  clinfo | platform
+   54  clinfo | grep platform
+   55  clinfo | grep Platform
+   56  clinfo > clinfo.log
+   57  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/AdvancedConvolution >> AdvancedConvolution.log
+   58  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/AdvancedConvolution > AdvancedConvolution.log
+   59  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/AdvancedConvolution
+   60  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter
+   61  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t >> SobelFilter
+   62  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i  >> SobelFilter.log
+   63  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i
+   64  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i20 
+   65  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 20 
+   66  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 
+   67  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 >> SobleFilter.log
+   68  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 -p 1
+   69  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 -p 0
+   70  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 -p 0 >> SobelFilterP0.log
+   71  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 -p 1 >> SobelFilterP1.log
+   72  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/AtomicCounters -t -i 200 -p 0 >> AtomicCountersP0.log
+   73  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 200 -p 0
+   74  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 200 -p 0 >> BoxFilter.log
+   75  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 200 -p 0 >> BoxFilterP0.log
+   76  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 200 -p 1
+   77  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 200 -p 1 >> BoxFilterP1.log
+   78  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 200 -p 0 >> BitonicSortP0.log
+   79  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 200 -p 1 >> BitonicSortP1.log
+   80  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 200 -p 2 >> SobelFilterP2.log
+   81* /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 200 -p 2 >> Bi
+   82  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/EigenValue -t -i 200 -p 0 >> EigenValueP0.log
+   83  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/EigenValue -t -i 200 -p 1 >> EigenValueP0.log
+   84  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/EigenValue -t -i 200 -p 0 >> EigenValueP0.log
+   85  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/EigenValue -t -i 200 -p 1 >> EigenValueP1.log
+   86  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/EigenValue -t -i 200 -p 2 >> EigenValueP2.log
+   87  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/FineGrainSVM -t -i 200 -p 0 >> FineGrainSVMP0.log
+   88  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/FineGrainSVM -t -i 200 -p 1 >> FineGrainSVMP0.log
+   89  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/FineGrainSVM -t -i 200 -p 0 >> FineGrainSVMP0.log
+   90  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/FineGrainSVM -t -i 200 -p 1 >> FineGrainSVMP1.log
+   91  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/FineGrainSVM -t -i 200 -p 2 >> FineGrainSVMP2.log
+   92  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 200 -p 2 >> BoxFilterP2.log
+   93  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HelloWorld -t -i 200 -p 0 >> HelloworldP0.log
+   94  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HelloWorld -h
+   95  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 200 -p 0 >> ImageOverlapP0.log
+   96  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 200 -p 1 >> ImageOverlapP1.log
+   97  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 200 -p 2 >> ImageOverlapP2.log
+   98  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 200 -p 0 >> HistogramAtomicsP0.log
+   99  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 200 -p 1 >> HistogramAtomicsP1.log
+  100  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 200 -p 2 >> HistogramAtomicsP2.log
+  101  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 500 -p 0 >> SobelFilterP0_500.log
+  102  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 500 -p 1 >> SobelFilterP1_500.log
+  103  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 500 -p 2 >> SobelFilterP2_500.log
+  104  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 500 -p 0 >> BoxFilterP0_500.log
+  105  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 500 -p 1 >> BoxFilterP1_500.log
+  106  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 500 -p 2 >> BoxFilterP2_500.log
+  107  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 500 -p 0 >> BitonicSortP0_500.log
+  108  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 500 -p 1 >> BitonicSortP1_500.log
+  109  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 500 -p 2 >> BitonicSortP2_500.log
+  110  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 500 -p 0 >> HistogramAtomicsP0_500.log
+  111  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 500 -p 1 >> HistogramAtomicsP1_500.log
+  112  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 500 -p 2 >> HistogramAtomicsP2_500.log
+  113  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 10 -p 0 >> SobelFilterP0_10.log
+  114  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 10 -p 1 >> SobelFilterP1_10.log
+  115  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/SobelFilter -t -i 10 -p 2 >> SobelFilterP2_10.log
+  116  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 10 -p 0 >> BoxFilterP0_10.log
+  117  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 10 -p 1 >> BoxFilterP1_10.log
+  118  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BoxFilter -t -i 10 -p 2 >> BoxFilterP2_10.log
+  119  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 10 -p 0 >> BitonicSortP0_10.log
+  120  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 10 -p 1 >> BitonicSortP1_10.log
+  121  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/BitonicSort -t -i 10 -p 2 >> BitonicSortP2_10.log
+  122  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 10 -p 0 >> HistogramAtomicsP0_10.log
+  123  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 10 -p 1 >> HistogramAtomicsP1_10.log
+  124  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/HistogramAtomics -t -i 10 -p 2 >> HistogramAtomicsP2_10.log
+  125  history > terminal_history.log
+  126  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 500 -p 0 >> ImageOverlapP0_500.log
+  127  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 500 -p 1 >> ImageOverlapP1_500.log
+  128  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 500 -p 2 >> ImageOverlapP2_500.log
+  129  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 10 -p 0 >> ImageOverlapP0_10.log
+  130  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 10 -p 1 >> ImageOverlapP1_10.log
+  131  /home/student2024b/LAB_AAW/2025/AMD-Samples/opencl/bin/x86_64/ImageOverlap -t -i 10 -p 2 >> ImageOverlapP2_10.log
+  132  history > terminal_history.log
