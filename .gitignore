@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Zip and build files
+
+*.zip
+*.7z
+AMD-Samples
