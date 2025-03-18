@@ -29,10 +29,11 @@ __kernel void sobel_filter(__read_only image2d_t inputImage, __write_only image2
 	const int2 coord = (int2)(get_global_id(0), get_global_id(1));
 
 	float treshold = 70.0;
+	int4 binarized = (int4)(0);
 	
 	const float4 conv_val = (float4){0.2989, 0.5870, 0.1140, 0.0}; 
 
-	constant int2 square_dim = (int2)(33, 33);
+	int2 square_dim = (int2)(3, 3);
 
 	uint4 eroded_pixel = (uint4)1;
 	float4 pixel = (float4)(0);
@@ -43,14 +44,16 @@ __kernel void sobel_filter(__read_only image2d_t inputImage, __write_only image2
 			for(int col = coord.y - (square_dim.y/(int)2); col <= coord.y + (square_dim.y/(int)2); ++col){
 				pixel = convert_float4(read_imageui(inputImage, imageSampler, (int2)(row, col)));
 				pixel_gray = dot(pixel, conv_val);
-				eroded_pixel &= convert_int4(step(treshold, pixel_gray));
-				//printf("row = %x, col = %x; \n\r", row, col);
+				binarized = step(treshold, pixel_gray);
+				eroded_pixel &= convert_uint4(binarized);
+
 			}
+			// printf("\n");
 		}
 		//printf("\n\r\n\r");
 	}
 
-	//write_imageui(outputImage, coord, convert_int4(pixel_gray));
+	// write_imageui(outputImage, coord, convert_uint4(pixel));
 	write_imageui(outputImage, coord, UCHAR_MAX*eroded_pixel);
 			
 }

@@ -33,41 +33,28 @@ __kernel void sobel_filter(__read_only image2d_t inputImage, __write_only image2
 	
 	const float4 conv_val = (float4){0.2989, 0.5870, 0.1140, 0.0}; 
 
-	int2 square_dim = (int2)(10, 10);
+	int2 square_dim = (int2)(3, 3);
 
-	unsigned int maximal_pixel = 0;
+	uint4 eroded_pixel = (uint4)1;
 	float4 pixel = (float4)(0);
 	float pixel_gray = 0;
 	//if(coord.x == 50 && coord.y == 50 )
 	{
 		for(int row = (coord.x) - (square_dim.x/(int)2); row <= (coord.x) + (square_dim.x/(int)2); ++row){
 			for(int col = coord.y - (square_dim.y/(int)2); col <= coord.y + (square_dim.y/(int)2); ++col){
-				int x2 = (row - coord.x)*(row - coord.x);
-				int a2 = (square_dim.x*square_dim.x/4);
-				int y2 = (col - coord.y)*(col - coord.y);
-				int b2 = (square_dim.y*square_dim.y/4);
-				if(	((float)x2)/((float)a2) + ((float)y2)/((float)b2) <= 1)
-				{
-					pixel = convert_float4(read_imageui(inputImage, imageSampler, (int2)(row, col)));
-					pixel_gray = dot(pixel, conv_val);
-					maximal_pixel = (maximal_pixel < pixel_gray) ? pixel_gray : maximal_pixel;
-					//printf("minimal = %d; \n\r", maximal_pixel);
-					// printf("8");
-				}
-				else
-				{
-					// printf(" ");
-				}
+				pixel = convert_float4(read_imageui(inputImage, imageSampler, (int2)(row, col)));
+				pixel_gray = dot(pixel, conv_val);
+				binarized = step(treshold, pixel_gray);
+				eroded_pixel &= convert_uint4(binarized);
+
 			}
 			// printf("\n");
 		}
 		//printf("\n\r\n\r");
 	}
 
-
-
 	// write_imageui(outputImage, coord, convert_uint4(pixel));
-	write_imageui(outputImage, coord, (uint4){maximal_pixel, maximal_pixel, maximal_pixel, 0});
+	write_imageui(outputImage, coord, UCHAR_MAX*eroded_pixel);
 			
 }
 
