@@ -36,3 +36,9 @@
 *.zip
 *.7z
 AMD-Samples
+Zips
+*.png
+*.bmp
+*.jpg
+**\build
+**\bin

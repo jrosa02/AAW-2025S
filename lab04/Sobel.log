@@ -1,0 +1,40 @@
+filter 7x7
+
+256x256
+
+Platform 0 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+Platform :Advanced Micro Devices, Inc.
+Device 0 : AMD Ryzen 5 5625U with Radeon Graphics
+
+Executing kernel for 100 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 256   | 256    | 0.0738427 | 0.0239448                  |
+
+1024x1024
+
+Platform 0 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+Platform :Advanced Micro Devices, Inc.
+Device 0 : AMD Ryzen 5 5625U with Radeon Graphics
+
+Executing kernel for 100 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 1024  | 1024   | 0.380892  | 0.333842                   |
+Platform 0 : Advanced Micro Devices, Inc.
+GPU not found. Falling back to CPU device
+Platform :Advanced Micro Devices, Inc.
+Device 0 : AMD Ryzen 5 5625U with Radeon Graphics
+
+Executing kernel for 100 iterations
+-------------------------------------------
+
+| Width | Height | Time(sec) | [Transfer+Kernel]Time(sec) |
+|-------|--------|-----------|----------------------------|
+| 4096  | 4096   | 5.2618    | 5.21517                    |
