@@ -42,3 +42,7 @@ Zips
 *.jpg
 **\build
 **\bin
+*.cmake
+*.make
+**\CMakeFiles
+**\.vscode
